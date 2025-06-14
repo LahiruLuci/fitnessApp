@@ -6,6 +6,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import ImageSlider from '../components/imageSlider'
+import BodyParts from '../components/bodyParts'
 
 export default function Home() {
   return (
@@ -53,6 +54,11 @@ export default function Home() {
       {/* image slider */}
       <View>
         <ImageSlider/>
+      </View>
+
+      {/* body parts component */}
+      <View className= "flex-1">
+        <BodyParts/>
       </View>
 
     </SafeAreaView>
